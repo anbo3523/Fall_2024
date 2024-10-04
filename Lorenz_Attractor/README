@@ -1,0 +1,31 @@
+Lorenz Attractor
+
+Angela Harumi Booth
+CSCI4229 Fall 2024
+
+
+Demontrating Lorenz Attractor in three dimensions. 
+
+
+Controls/Key Binds
+
+* Rotation:
+w - Rotate the view upward
+a - Rotate the view downward
+s - Rotate the view to the left
+d - Rotate the view to the right
+
+* Adjusting Lorenz Parameters:
+1 - Increase s (sigma)
+2 - Decrease s
+3 - Increase r (rho)
+4 - Decrease r
+5 - Increase b (beta)
+6 - Decrease b
+
+Time spent on this project: Total of 5 hours. I saw this cool youtube video of a person who created a visualization of the Lorenz Attractor but it was drawing in real time: https://www.youtube.com/watch?v=f0lkz2gSsIk.
+							I wanted to do something similar to this, however, I would run into a road block when it came to being able to adjust the lorenz parameters and keep the ability to have it actively draw the 
+							Lorenz Attractor in the visualization. I was able to have the display function calculate each point and as each point was drawn, the screen would update with the new point giving the illusion
+							of real-time drawing. I used glutIdleFunc to continously call the display function to update the screen. If I were to implement the ability to change the parameters, I probably would have to 
+							clear the screen completely and start the drawing over which was a bit clunky so I stuck with the original implementation of just displaying the Lorenz Attractor. Additionally, I was having some
+							issues with the Lorenz Attractor showing up way too close when launched. Found that adjusting the camera back by -100.0 (gltranslatef) and increasing the FOV (gluperspective) helped with this.
