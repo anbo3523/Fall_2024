@@ -1,0 +1,28 @@
+Trees, Flowers, and Tire Swing scene
+
+Angela Harumi Booth
+CSCI4229 Fall 2024
+
+
+Created a scene using cylindar and cone for tree, torus and line for tire swing, and circles for flowers. Additionally, included a green quad for grass.
+
+
+Controls/Key Binds
+
+* Rotation:
+Left Arrow: Rotate the camera left.
+Right Arrow: Rotate the camera right.
+Up Arrow: Tilt the camera up (restricted to a max angle (90) to avoid extreme upward view).
+Down Arrow: Tilt the camera down (restricted to avoid seeing the underside of the grass).
+
+* Files included:
+hw3.cpp
+makefile
+README
+
+
+Time spent on this project: Spent about 6 hours on this project. 
+                            Tree: Composed of a cylinder (trunk) colored brown and a cone (the leaf part) colored green.
+                            Tire Swing: Was created using Song Ho's implementation of a torus (source listed in code) that I colored a dark grey and then attached a "string" by drawing a line from the tire to the cone on the tree colored yellow.
+                            Flowers: Small circles drawn in a circle pattern scattered in the scene with a yellow circle in the middle of the flower.
+                            Grass: A plain quad colored a darker green. 
